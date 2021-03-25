@@ -1,5 +1,7 @@
 <div class="card m-5 p-3">
-  <p id="notice" class="alert alert-success"><%= notice %></p>
+  <% if notice %>
+    <p id="notice" class="alert alert-success"><%= notice %></p>
+  <% end %>
 
   <p>
     <strong>Name:</strong>
