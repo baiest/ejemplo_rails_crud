@@ -1,0 +1,31 @@
+<div class="card m-5 p-3">
+  <p id="notice" class="alert alert-success"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @person.name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @person.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @person.age %>
+  </p>
+
+  <p>
+    <strong>Country:</strong>
+    <%= @person.country %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @person.description %>
+  </p>
+</div>
+
+<%= link_to 'Back', people_path, :class=>"btn btn-dark" %> |
+<%= link_to 'Edit', edit_person_path(@person), :class=>"btn btn-warning" %> 
